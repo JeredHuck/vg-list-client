@@ -1,6 +1,12 @@
-<div class="sidebar-container">
-  <span>Option 1</span>
-  <span>Option 2</span>
-  <span>Option 3</span>
-  <span>Option 4</span>
-</div>
+<mat-sidenav-container>
+  <mat-sidenav
+    #sidenav mode="side"
+    opened="false"
+    (mouseenter)="sidenav.open()"
+    (mouseleave)="sidenav.close()">
+    <span>Option 1</span>
+    <span>Option 2</span>
+    <span>Option 3</span>
+    <span>Option 4</span>
+  </mat-sidenav>
+</mat-sidenav-container>
