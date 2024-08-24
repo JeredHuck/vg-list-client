@@ -37,9 +37,12 @@ $vg-list-client-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%;
+             background-color: var(--background-color);  }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+
 :root {
-  --main-color: #fd5f0f
+  --main-color: #fd5f0f;
+  --background-color: #b6b6b6;
 }

@@ -2,7 +2,8 @@
   color: #eee;
   background-color: #333;
   padding: 1rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
 .navbar:hover .vg-list-logo {
@@ -11,11 +12,18 @@
 }
 
 .option-select {
-  padding: .4rem;
-  transition: .3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0.4rem;
+  transition: all 0.3s ease-in-out;
 }
 
-.option-select:hover {
+.option {
+  transition: all 0.3s ease-in-out;
+}
+
+.option:hover {
   color: var(--main-color);
   font-size: 20px;
   cursor: pointer;
@@ -24,6 +32,7 @@
 .vg-list-logo {
   height: 100px;
   border-radius: 2.9rem;
-  transition: .3s ease-in-out;
-  padding: .7em;
+  transition: all 0.3s ease-in-out;
+  padding: 0.7em;
 }
+

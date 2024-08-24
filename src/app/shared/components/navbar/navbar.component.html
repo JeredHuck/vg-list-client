@@ -2,12 +2,15 @@
   <div class="navbar"
   (mouseenter)="toggleSidebar()"
   (mouseleave)="toggleSidebar()">
-  <img class ="vg-list-logo"
+  <img class="vg-list-logo"
        src="../../../../assets/images/Designer (1).png" alt="Logo">
     @if(isSidebarVisible()){
-    <p class="option-select">Option 1</p>
-    <p class="option-select">Option 2</p>
-    <p class="option-select">Option 3</p>
-    <p class="option-select">Option 4</p>}
+    <div class="option-select">
+    <p class="option">Option 1</p>
+    <p class="option">Option 2</p>
+    <p class="option">Option 3</p>
+    <p class="option">Option 4</p>
+    </div>
+  }
   </div>
 </div>
