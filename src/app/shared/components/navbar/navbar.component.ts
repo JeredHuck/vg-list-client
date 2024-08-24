@@ -12,11 +12,11 @@ export class NavbarComponent {
   public sidebarVisibility:boolean = false;
 
   toggleSidebar() {
-    this.sidebarVisibility = !this.sidebarVisibility
+    this.sidebarVisibility = !this.sidebarVisibility;
   }
 
   isSidebarVisible() {
-    return this.sidebarVisibility
+    return this.sidebarVisibility;
   }
 
 }

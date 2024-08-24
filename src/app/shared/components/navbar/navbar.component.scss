@@ -1,4 +1,29 @@
 .navbar {
   color: #eee;
   background-color: #333;
+  padding: 1rem;
+  transition: all .3s ease-in-out;
+}
+
+.navbar:hover .vg-list-logo {
+  border-radius: 3rem;
+  transform: scale(1.2);
+}
+
+.option-select {
+  padding: .4rem;
+  transition: .3s ease-in-out;
+}
+
+.option-select:hover {
+  color: var(--main-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.vg-list-logo {
+  height: 100px;
+  border-radius: 2.9rem;
+  transition: .3s ease-in-out;
+  padding: .7em;
 }

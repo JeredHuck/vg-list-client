@@ -39,3 +39,7 @@ $vg-list-client-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --main-color: #fd5f0f
+}
