@@ -6,8 +6,8 @@
        src="../../../../assets/images/Designer (1).png" alt="Logo">
     @if(isSidebarVisible()){
     <div class="option-select">
-    <p class="option">Home</p>
-    <p class="option">Explore</p>
+    <p class="option" [routerLink]="['/home']">Home</p>
+    <p class="option" [routerLink]="['/explore']">Explore</p>
     <p class="option">Profile</p>
     <p class="option">Settings</p>
     </div>
