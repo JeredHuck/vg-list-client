@@ -1,3 +1,11 @@
 <div class="home-container">
   <button>New List</button>
+
+
+  <div class="top-games-container">
+     <h2>This Week's Top Picks</h2>
+       <div *ngFor="let topGame of topGames">
+        <h3>{{ topGame }}</h3>
+       </div>
+  </div>
 </div>
