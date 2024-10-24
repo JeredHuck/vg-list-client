@@ -1,3 +1,8 @@
+.home-container {
+  position: relative;
+  z-index: 5;
+}
+
 button {
   background-color: var(--main-color);
   border: none;
@@ -31,7 +36,7 @@ button:active {
 .top-games {
   color: whitesmoke;
   text-align: center;
-  border: 1px solid var(--accent);
+  border: 3px solid var(--accent);
   border-radius: 20px;
   padding: 2em;
   background-color: var(--main-color);
