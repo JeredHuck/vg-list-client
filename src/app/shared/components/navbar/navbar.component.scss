@@ -3,13 +3,19 @@
   background-color: #333;
   padding: 1rem;
   transition: all 0.3s ease-in-out !important;
-  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.75);
 }
 
 .navbar:hover .vg-list-logo {
   margin: 3rem;
   border-radius: 3rem;
   transform: scale(2.0);
+}
+
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .option-select {
@@ -21,13 +27,17 @@
 }
 
 .option {
-  transition: all 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .option:hover {
   color: var(--main-color);
   font-size: 20px;
   cursor: pointer;
+}
+
+.option:active {
+  color: var(--accent);
 }
 
 .vg-list-logo {
