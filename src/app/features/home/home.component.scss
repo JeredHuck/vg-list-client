@@ -1,6 +1,13 @@
 .home-container {
-  position: relative;
-  z-index: 5;
+  position: fixed;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 150px;
 }
 
 button {
@@ -24,7 +31,6 @@ button:hover {
 
 button:active {
   background-color: var(--accent);
-
 }
 
 .top-games-container {
