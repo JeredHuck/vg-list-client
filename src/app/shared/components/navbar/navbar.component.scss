@@ -10,7 +10,7 @@
 }
 
 .navbar:hover .vg-list-logo {
-  margin: 3rem;
+  margin: 2rem;
   border-radius: 3rem;
   transform: scale(2.0);
 }
@@ -23,13 +23,15 @@
 
 .option-select {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: left;
+  align-items: left;
   padding: 0.4rem;
   transition: all 0.3s ease-in-out;
 }
 
 .option {
+  margin: 2em;
   transition: 0.1s ease-in-out;
 }
 
