@@ -1,4 +1,7 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: #eee;
   background-color: #333;
   padding: 1rem;
@@ -7,7 +10,7 @@
 }
 
 .navbar:hover .vg-list-logo {
-  margin: 3rem;
+  margin: 2rem;
   border-radius: 3rem;
   transform: scale(2.0);
 }
@@ -20,24 +23,34 @@
 
 .option-select {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: left;
+  align-items: left;
   padding: 0.4rem;
   transition: all 0.3s ease-in-out;
 }
 
 .option {
+  margin: 2em;
   transition: 0.1s ease-in-out;
 }
 
-.option:hover {
+.option:hover,
+.search-icon:hover {
   color: var(--main-color);
   font-size: 20px;
   cursor: pointer;
 }
 
-.option:active {
+.option:active,
+.search-icon:active {
   color: var(--accent);
+}
+
+.search-icon {
+  display: inline-flex;
+  flex-direction: right;
+  margin: 3em;
 }
 
 .vg-list-logo {

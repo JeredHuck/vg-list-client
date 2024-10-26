@@ -11,7 +11,7 @@ import { NgStyle } from '@angular/common';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  public sidebarVisibility: boolean = false;
+  public navbarVisibility: boolean = false;
   zIndex!: number;
 
   constructor(private zIndexService: ZIndexService) {}
@@ -21,18 +21,18 @@ export class NavbarComponent {
     this.zIndex = this.zIndexService.getZIndex('navbar');
   }
 
-  toggleSidebar() {
-    this.sidebarVisibility = !this.sidebarVisibility
+  toggleNavbar() {
+    this.navbarVisibility = !this.navbarVisibility
     setTimeout(() => {
       const options = document.querySelectorAll('.option');
       options.forEach((element:Element) => {
         const option = element as HTMLElement;
-        option.style.opacity = this.sidebarVisibility ? '1' : '0';
+        option.style.opacity = this.navbarVisibility ? '1' : '0';
       })
     })
   }
 
-  isSidebarVisible() {
-    return this.sidebarVisibility;
+  isNavbarVisible() {
+    return this.navbarVisibility;
   }
 }
