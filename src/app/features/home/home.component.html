@@ -1,10 +1,9 @@
 <div class="home-container" [ngStyle]="{ 'z-index': zIndex }">
 
   <div class="button-container">
-    <button (click)="openModal()">New List</button>
+    <button mat-raised-button (click)="openDialog()">New List</button>
   </div>
 
-  <app-modal [visibility]="showModal"/>
 
   <div class="top-games-container">
     <div class="top-games">

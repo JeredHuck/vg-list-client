@@ -35,8 +35,6 @@ $vg-list-client-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($vg-list-client-theme);
 
-/* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%;
              background-color: var(--background-color);  }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
