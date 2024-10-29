@@ -14,7 +14,7 @@ export class ModalComponent {
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) {}
 
-  onNoClick(): void {
+  closeModal(): void {
     this.dialogRef.close();
   }
 }
