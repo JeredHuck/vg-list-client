@@ -5,7 +5,13 @@
         <h5 class="modal-title">Create a List</h5>
       </div>
       <div class="modal-body">
-        <p>yes, this is wrong</p>
+        <form [formGroup]="gameList" class="gameForm">
+          <input id="game1" type="text" formControlName="game1">
+          <input id="game2" type="text" formControlName="game2">
+          <input id="game3" type="text" formControlName="game3">
+          <input id="game4" type="text" formControlName="game4">
+          <input id="game5" type="text" formControlName="game5">
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" (click)="closeModal()">Close</button>
