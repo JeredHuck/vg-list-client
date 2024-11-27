@@ -5,7 +5,7 @@
         <h5 class="modal-title">Create a List</h5>
       </div>
       <div class="modal-body">
-        <form [formGroup]="gameList" class="gameForm">
+        <form [formGroup]="gameList" class="gameForm" (ngSubmit)="onSubmit()">
           <input id="game1" type="text" formControlName="game1">
           <input id="game2" type="text" formControlName="game2">
           <input id="game3" type="text" formControlName="game3">
