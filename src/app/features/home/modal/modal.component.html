@@ -11,11 +11,13 @@
           <input id="game3" type="text" formControlName="game3">
           <input id="game4" type="text" formControlName="game4">
           <input id="game5" type="text" formControlName="game5">
+
+          <div class="modal-footer">
+            <button type="button" (click)="closeModal()">Close</button>
+            <button type="submit">Save changes</button>
+          </div>
+
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" (click)="closeModal()">Close</button>
-        <button type="submit">Save changes</button>
       </div>
     </div>
   </div>

@@ -28,6 +28,7 @@ export class ModalComponent {
   }
 
   onSubmit() {
+    this.closeModal()
     console.log(this.gameList.value)
   }
 }
