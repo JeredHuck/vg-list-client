@@ -24,7 +24,7 @@ export class NavbarComponent {
   toggleNavbar() {
     this.navbarVisibility = !this.navbarVisibility
     setTimeout(() => {
-      const options = document.querySelectorAll('.option');
+      const options = document.querySelectorAll('.option-select, .search-icon');
       options.forEach((element:Element) => {
         const option = element as HTMLElement;
         option.style.opacity = this.navbarVisibility ? '1' : '0';

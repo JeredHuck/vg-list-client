@@ -7,7 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NgStyle, ModalComponent],
+  imports: [NgStyle],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

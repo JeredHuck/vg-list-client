@@ -30,3 +30,8 @@ button:hover {
 button:active {
   background-color: var(--accent);
 }
+
+.gameForm {
+  display: flex;
+  flex-direction: column;
+}
