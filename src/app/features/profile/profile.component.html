@@ -15,10 +15,16 @@
   <div class="list-box">
     <div class="favorited-lists">
       <h2>Favorited Lists</h2>
+      @for (myList of myLists; track $index) {
+        <h3>{{ myList }}</h3>
+      }
     </div>
 
     <div class="my-lists">
       <h2>My Lists</h2>
+      @for (myFavoritedList of myFavoritedLists; track $index) {
+        <h3>{{ myFavoritedList }}</h3>
+      }
     </div>
   </div>
 </div>

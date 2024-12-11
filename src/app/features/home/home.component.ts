@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ZIndexService } from '../../core/guards/services/z-index-service';
+import { ZIndexService } from '../../core/services/z-index-service';
 import { NgStyle } from '@angular/common';
 import { ModalComponent } from './new-list-modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
