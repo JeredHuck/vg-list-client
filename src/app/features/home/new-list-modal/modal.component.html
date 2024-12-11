@@ -6,17 +6,16 @@
       </div>
       <div class="modal-body">
         <form [formGroup]="gameList" class="gameForm" (ngSubmit)="onSubmit()">
-          <input id="game1" type="text" formControlName="game1">
-          <input id="game2" type="text" formControlName="game2">
-          <input id="game3" type="text" formControlName="game3">
-          <input id="game4" type="text" formControlName="game4">
-          <input id="game5" type="text" formControlName="game5">
+          <input id="game1" type="text" formControlName="game1" />
+          <input id="game2" type="text" formControlName="game2" />
+          <input id="game3" type="text" formControlName="game3" />
+          <input id="game4" type="text" formControlName="game4" />
+          <input id="game5" type="text" formControlName="game5" />
 
           <div class="modal-footer">
             <button type="button" (click)="closeModal()">Close</button>
             <button type="submit">Save changes</button>
           </div>
-
         </form>
       </div>
     </div>

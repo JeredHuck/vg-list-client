@@ -1,0 +1,39 @@
+.profile-container {
+  margin-top: 200px;
+}
+
+.pfp {
+  margin: 2rem;
+  border-radius: 100px;
+}
+
+.profile-button {
+  float: right;
+}
+
+.profile-options {
+  margin-top: 0;
+}
+
+button {
+  background-color: var(--main-color);
+  border: none;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: var(--background-color);
+}
+
+button:active {
+  background-color: var(--accent);
+}
