@@ -1,0 +1,59 @@
+.profile-container {
+  margin-top: 200px;
+}
+
+.pfp {
+  margin: 2rem;
+  border-radius: 100px;
+}
+
+.profile-info {
+  margin-left: 5.5rem;
+}
+
+.profile-button {
+  float: right;
+}
+
+.profile-options {
+  margin-top: 0;
+}
+
+.list-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.favorited-lists,
+.my-lists {
+  color: whitesmoke;
+  text-align: center;
+  border: 3px solid var(--accent);
+  border-radius: 20px;
+  padding: 2em;
+  background-color: var(--main-color);
+  width: 30vw;
+}
+
+button {
+  background-color: var(--main-color);
+  border: none;
+  color: whitesmoke;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2em;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  color: var(--background-color);
+}
+
+button:active {
+  background-color: var(--accent);
+}

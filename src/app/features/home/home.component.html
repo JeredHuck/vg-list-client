@@ -1,13 +1,11 @@
 <div class="home-container" [ngStyle]="{ 'z-index': zIndex }">
-
   <div class="button-container">
     <button mat-raised-button (click)="openDialog()">New List</button>
   </div>
 
-
   <div class="top-games-container">
     <div class="top-games">
-      <h2>Most Chosen Games</h2>
+      <h2>All Time Most Chosen Games</h2>
       @for (topGame of topGames; track $index) {
         <h3>{{ topGame }}</h3>
       }

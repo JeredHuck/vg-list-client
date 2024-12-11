@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ZIndexService } from '../../core/guards/services/z-index-service';
+import { ZIndexService } from '../../core/services/z-index-service';
 import { NgStyle } from '@angular/common';
-import { ModalComponent } from './modal/modal.component';
+import { ModalComponent } from './new-list-modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
@@ -17,8 +17,10 @@ export class HomeComponent implements OnInit {
 
   topGames: string[] = ['Zelda', 'Mario', 'Sonic'];
 
-  constructor(private zIndexService: ZIndexService,
-              public dialog: MatDialog) {}
+  constructor(
+    private zIndexService: ZIndexService,
+    public dialog: MatDialog,
+  ) {}
 
   ngOnInit() {
     this.zIndexService.setZIndex('home', 5);
@@ -28,10 +30,9 @@ export class HomeComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(ModalComponent, {
       width: '250px',
-      data: { name: "jrat" }
     });
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log('The dialog was closed', result);
     });
   }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ZIndexService } from '../../../core/guards/services/z-index-service';
+import { ZIndexService } from '../../../core/services/z-index-service';
 import { NgStyle } from '@angular/common';
 
 @Component({
@@ -22,14 +22,14 @@ export class NavbarComponent {
   }
 
   toggleNavbar() {
-    this.navbarVisibility = !this.navbarVisibility
+    this.navbarVisibility = !this.navbarVisibility;
     setTimeout(() => {
       const options = document.querySelectorAll('.option-select, .search-icon');
-      options.forEach((element:Element) => {
+      options.forEach((element: Element) => {
         const option = element as HTMLElement;
         option.style.opacity = this.navbarVisibility ? '1' : '0';
-      })
-    })
+      });
+    });
   }
 
   isNavbarVisible() {
