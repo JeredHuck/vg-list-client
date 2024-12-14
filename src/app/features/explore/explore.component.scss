@@ -1,3 +1,10 @@
-.explore-box {
+.explore-container {
   margin-top: 200px;
+  color: whitesmoke;
+  text-align: center;
+  border: 3px solid var(--accent);
+  border-radius: 20px;
+  padding: 2em;
+  background-color: var(--main-color);
+  width: 30vw;
 }
