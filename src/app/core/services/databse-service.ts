@@ -17,19 +17,33 @@ export class DatabaseService {
       .pipe(catchError(this.handleError));
   }
 
-  getUserLists(id: number): Observable<List> {
+  getUserLists(userId: number): Observable<List> {
     return this.http
-      .get<List>(`${environment.apiUrl}/${id}/userLists`)
+      .get<List>(`${environment.apiUrl}/users/${userId}/lists`)
       .pipe(catchError(this.handleError));
   }
 
-  createList(id: number) {}
+  createList(userId: number, content: string[]): Observable<List> {
+    return this.http
+      .post<List>(`${environment.apiUrl}/users/${userId}/lists`, content)
+      .pipe(catchError(this.handleError));
+  }
 
-  deleteList(id: number) {}
+  deleteList(userId: number, listId: number) {
+    return this.http
+      .delete<List>(`${environment.apiUrl}/users/${userId}/lists/${listId}`)
+      .pipe(catchError(this.handleError));
+  }
 
   getUser(id: number): Observable<User> {
     return this.http
-      .get<User>(`${environment.apiUrl}/${id}`)
+      .get<User>(`${environment.apiUrl}/users/${id}`)
+      .pipe(catchError(this.handleError));
+  }
+
+  createUser(username: string, password: any) {
+    return this.http
+      .post<User>(`${environment.apiUrl}/createUser`, username, password)
       .pipe(catchError(this.handleError));
   }
 
