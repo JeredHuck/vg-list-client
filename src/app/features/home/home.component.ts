@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ZIndexService } from '../../core/services/z-index-service';
 import { NgStyle } from '@angular/common';
 import { ModalComponent } from './new-list-modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { DatabaseService } from '../../core/services/databse-service';
+import { provideHttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -18,13 +19,14 @@ export class HomeComponent implements OnInit {
   topGames: string[] = ['Zelda', 'Mario', 'Sonic'];
 
   constructor(
-    private zIndexService: ZIndexService,
+    private databaseService: DatabaseService,
     public dialog: MatDialog,
   ) {}
 
   ngOnInit() {
-    this.zIndexService.setZIndex('home', 5);
-    this.zIndex = this.zIndexService.getZIndex('home');
+    this.databaseService.getLists().subscribe((lists) => {
+      console.log(lists);
+    });
   }
 
   openDialog() {
