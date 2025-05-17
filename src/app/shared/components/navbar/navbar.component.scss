@@ -10,10 +10,8 @@
 }
 
 .navbar:hover .vg-list-logo {
-  padding: 1em;
-  margin: 2rem;
   border-radius: 3rem;
-  transform: scale(2.0);
+  transform: scale(1.5);
 }
 
 .navbar-container {
@@ -23,12 +21,13 @@
 }
 
 .option-select {
-  display: flex;
+  opacity: 0;
+  display: inline-flex;
   flex-direction: row;
   justify-content: left;
   align-items: left;
   padding: 0.4rem;
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .option {
@@ -38,8 +37,9 @@
 
 .option:hover,
 .search-icon:hover {
+  display: inline-flex;
   color: var(--main-color);
-  font-size: 20px;
+  transform: all ease-in-out 0.3s (scale 1.2);
   cursor: pointer;
 }
 
@@ -49,9 +49,11 @@
 }
 
 .search-icon {
+  opacity: 0;
   display: inline-flex;
   flex-direction: right;
   margin: 3em;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .vg-list-logo {
@@ -59,10 +61,10 @@
   border-radius: 2.9rem;
   transition: all 0.3s ease-in-out;
   padding: 1em;
+  margin: 0.1rem;
 }
 
-.option-select, .search-icon {
+.option-select,
+.search-icon {
   transition: opacity 0.5s ease-in-out;
 }
-
-
