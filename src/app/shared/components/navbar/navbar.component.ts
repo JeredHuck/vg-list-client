@@ -29,7 +29,7 @@ export class NavbarComponent {
         const option = element as HTMLElement;
         option.style.opacity = this.navbarVisibility ? '1' : '0';
       });
-    });
+    }, 50);
   }
 
   isNavbarVisible() {
