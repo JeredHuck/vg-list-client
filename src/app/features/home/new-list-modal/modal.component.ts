@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DatabaseService } from '../../../core/services/databse-service';
 
 @Component({
   selector: 'app-modal',
@@ -21,6 +22,7 @@ export class ModalComponent {
   constructor(
     public dialogRef: MatDialogRef<ModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
+    private dbService: DatabaseService,
   ) {}
 
   closeModal(): void {
@@ -29,6 +31,7 @@ export class ModalComponent {
 
   onSubmit() {
     this.closeModal();
+    // this.dbService.createList() TODO: create session controller and gather userID for list management
     console.log(this.gameList.value);
   }
 }
