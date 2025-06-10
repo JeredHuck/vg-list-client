@@ -20,9 +20,9 @@ export class ModalComponent {
   });
 
   constructor(
+    // private dbService: DatabaseService,
     public dialogRef: MatDialogRef<ModalComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-    // private dbService: DatabaseService,
   ) {}
 
   closeModal(): void {

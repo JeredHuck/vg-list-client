@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from '../../shared/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-settings',
   standalone: true,
-  imports: [],
+  imports: [NavbarComponent],
   templateUrl: './settings.component.html',
-  styleUrl: './settings.component.scss'
+  styleUrl: './settings.component.scss',
 })
-export class SettingsComponent {
-
-}
+export class SettingsComponent {}

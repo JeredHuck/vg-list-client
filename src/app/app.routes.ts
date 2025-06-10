@@ -4,24 +4,46 @@ import { HomeComponent } from './features/home/home.component';
 import { ExploreComponent } from './features/explore/explore.component';
 import { ProfileComponent } from './features/profile/profile.component';
 import { SettingsComponent } from './features/settings/settings.component';
+import { LoginComponent } from './features/auth/login/login.component';
+import { SignupComponent } from './features/auth/signup/signup.component';
+import { ChangePasswordComponent } from './features/auth/change-password/change-password.component';
 
 export const routes: Routes = [
   {
-    path: '', redirectTo: 'home', pathMatch: 'full'
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
   },
 
   {
-    path: 'home', component: HomeComponent
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
+  },
+  {
+    path: 'change-password',
+    component: ChangePasswordComponent,
   },
 
   {
-    path: 'explore', component: ExploreComponent
+    path: 'home',
+    component: HomeComponent,
   },
 
   {
-    path: 'profile', component: ProfileComponent
+    path: 'explore',
+    component: ExploreComponent,
   },
-   {
-    path: 'settings', component: SettingsComponent
-   }
+
+  {
+    path: 'profile',
+    component: ProfileComponent,
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent,
+  },
 ];
