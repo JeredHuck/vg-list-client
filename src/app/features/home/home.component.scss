@@ -43,6 +43,9 @@
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(63, 81, 181, 0.08);
   padding: 24px 32px;
+
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .top-games h2 {

@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ZIndexService } from '../../core/services/z-index-service';
 import { ModalComponent } from './new-list-modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
-import { NavbarComponent } from '../../shared/components/navbar/navbar.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

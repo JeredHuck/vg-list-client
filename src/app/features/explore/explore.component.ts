@@ -1,10 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { NavbarComponent } from '../../shared/components/navbar/navbar.component';
-
 @Component({
   selector: 'app-explore',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [],
   templateUrl: './explore.component.html',
   styleUrl: './explore.component.scss',
 })

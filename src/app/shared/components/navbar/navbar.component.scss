@@ -7,6 +7,9 @@
   padding: 1rem;
   box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.75);
   transition: all ease-in-out 0.3s;
+
+  user-select: none;
+  -moz-user-select: none;
 }
 
 .navbar:hover .vg-list-logo {
@@ -31,6 +34,8 @@
 }
 
 .option {
+  text-decoration: none;
+  color: inherit;
   margin: 2em;
   transition: 0.1s ease-in-out;
 }
