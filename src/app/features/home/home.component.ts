@@ -3,6 +3,7 @@ import { ZIndexService } from '../../core/services/z-index-service';
 import { ModalComponent } from './new-list-modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
 import { DatabaseService } from '../../core/services/databse-service';
+import { List } from '../../shared/models/list';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +15,7 @@ import { DatabaseService } from '../../core/services/databse-service';
 export class HomeComponent implements OnInit {
   zIndex!: number;
   showModal = false;
+  lists: List[] = [];
 
   topGames: string[] = ['Zelda', 'Mario', 'Sonic'];
 
@@ -27,7 +29,10 @@ export class HomeComponent implements OnInit {
     this.zIndexService.setZIndex('home', 5);
     this.zIndex = this.zIndexService.getZIndex('home');
     this.dbService.getUserLists(1).subscribe({
-      next: (lists) => console.log('Lists fetched successfully:', lists),
+      next: (lists) => {
+        this.lists = lists;
+        console.log('Lists fetched successfully:', this.lists);
+      },
       error: (error) => console.error('Error fetching lists:', error),
     });
   }
