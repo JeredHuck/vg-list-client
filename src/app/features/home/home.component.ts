@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ZIndexService } from '../../core/services/z-index-service';
 import { ModalComponent } from './new-list-modal/modal.component';
 import { MatDialog } from '@angular/material/dialog';
+import { DatabaseService } from '../../core/services/databse-service';
 
 @Component({
   selector: 'app-home',
@@ -19,11 +20,16 @@ export class HomeComponent implements OnInit {
   constructor(
     private zIndexService: ZIndexService,
     public dialog: MatDialog,
+    private dbService: DatabaseService,
   ) {}
 
   ngOnInit() {
     this.zIndexService.setZIndex('home', 5);
     this.zIndex = this.zIndexService.getZIndex('home');
+    this.dbService.getUserLists(1).subscribe({
+      next: (lists) => console.log('Lists fetched successfully:', lists),
+      error: (error) => console.error('Error fetching lists:', error),
+    });
   }
 
   openDialog() {
